@@ -7,10 +7,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: ecommerce
+        - id: ecommerceapi
           uri: http://localhost:8090
           predicates:
-            - Path=/api/v1/ecommerce/**
+            - Path=/api/v1/ecommerceapi/**
 eureka:
   client:
     register-with-eureka: false
