@@ -1,4 +1,4 @@
-package org.ucbdev.ecommerceapi.entity.base;
+package org.ucbdev.ecommerceapi.core.domain.entity.base;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

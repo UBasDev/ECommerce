@@ -1,4 +1,4 @@
-package org.ucbdev.ecommerceapi.entity;
+package org.ucbdev.ecommerceapi.core.domain.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;

@@ -1,8 +1,8 @@
-package org.ucbdev.ecommerceapi.entity;
+package org.ucbdev.ecommerceapi.core.domain.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import org.ucbdev.ecommerceapi.entity.base.BaseEntity;
+import org.ucbdev.ecommerceapi.core.domain.entity.base.BaseEntity;
 
 @Entity
 @Table(name = "Users")
