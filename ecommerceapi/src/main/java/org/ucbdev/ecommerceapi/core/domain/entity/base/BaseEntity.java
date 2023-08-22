@@ -23,35 +23,16 @@ public class BaseEntity {
     public BaseEntity() {
     }
 
-    public BaseEntity(Long id, LocalDateTime createdDate, LocalDateTime updatedDate, LocalDateTime deletedDate) {
-        this.id = id;
-        this.createdDate = createdDate;
-        this.updatedDate = updatedDate;
-        this.deletedDate = deletedDate;
-    }
-
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public LocalDateTime getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(LocalDateTime createdDate) {
-        this.createdDate = createdDate;
-    }
-
     public LocalDateTime getUpdatedDate() {
         return updatedDate;
-    }
-
-    public void setUpdatedDate(LocalDateTime updatedDate) {
-        this.updatedDate = updatedDate;
     }
 
     public LocalDateTime getDeletedDate() {

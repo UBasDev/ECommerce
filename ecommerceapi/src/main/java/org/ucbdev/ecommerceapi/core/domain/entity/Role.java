@@ -57,4 +57,87 @@ public class Role {
             insertable= true
     )
     private User user;
+    public Role(){
+
+    }
+
+    public Role(String name, String value, Byte code) {
+        this.name = name;
+        this.value = value;
+        this.code = code;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public Byte getCode() {
+        return code;
+    }
+
+    public void setCode(Byte code) {
+        this.code = code;
+    }
+
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
+    }
+
+    public LocalDateTime getUpdatedDate() {
+        return updatedDate;
+    }
+
+    public int getVersion() {
+        return version;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        if(!this.user.equals(user)){
+            this.user = user;
+            user.setRole(this);
+        }
+    }
+    public static RoleBuilder startBuild(){
+        return new RoleBuilder();
+    }
+    public static class RoleBuilder{
+        private String name;
+        private String value;
+        private Byte code;
+        public RoleBuilder setName(String name){
+            this.name = name;
+            return this;
+        }
+        public RoleBuilder setValue(String value){
+            this.value = value;
+            return this;
+        }
+        public RoleBuilder setCode(Byte code){
+            this.code = code;
+            return this;
+        }
+        public Role buildEnd(){
+            return new Role(this.name, this.value, this.code);
+        }
+    }
 }
