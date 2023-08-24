@@ -9,6 +9,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Entity
 @Table(name = "Roles")
@@ -117,6 +118,33 @@ public class Role {
             user.setRole(this);
         }
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Role role)) return false;
+        return version == role.version && Objects.equals(id, role.id) && Objects.equals(name, role.name) && Objects.equals(value, role.value) && Objects.equals(code, role.code) && Objects.equals(createdDate, role.createdDate) && Objects.equals(updatedDate, role.updatedDate) && Objects.equals(user, role.user);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, value, code, createdDate, updatedDate, version, user);
+    }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", value='" + value + '\'' +
+                ", code=" + code +
+                ", createdDate=" + createdDate +
+                ", updatedDate=" + updatedDate +
+                ", version=" + version +
+                ", user=" + user +
+                '}';
+    }
+
     public static RoleBuilder startBuild(){
         return new RoleBuilder();
     }

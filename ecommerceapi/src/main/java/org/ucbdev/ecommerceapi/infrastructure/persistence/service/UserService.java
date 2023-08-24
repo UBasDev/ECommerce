@@ -7,6 +7,7 @@ import org.ucbdev.ecommerceapi.core.application.service.IUserService;
 public class UserService implements IUserService {
     @Override
     public void createSingleUser() {
+System.nanoTime();
         System.out.println("User has been created");
     }
 }

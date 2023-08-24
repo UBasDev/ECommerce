@@ -14,12 +14,6 @@ D
 gateway/pom.xml,4\b\4b316bc60d1cfae51045f6fc8e58a8ae31f03ff3
 p
 @gateway/src/main/java/org/ucbdev/gateway/GatewayApplication.java,9\5\95d43ee953188927af942989809f1b314198fc35
-~
-Necommerceapi/src/main/java/org/ucbdev/ecommerceapi/entity/base/BaseEntity.java,e\c\ec866479969b34aba5dd3f6260239c859e88c39e
-s
-Cecommerceapi/src/main/java/org/ucbdev/ecommerceapi/entity/Role.java,0\4\04b62d02b9c83280a58855baaef8e06789fd476f
-s
-Cecommerceapi/src/main/java/org/ucbdev/ecommerceapi/entity/User.java,e\c\ecf222b3b9c5eccb1eee4aecb8d188b5010be2af
 D
 ecommerceapi/pom.xml,7\3\73e4502dd0a02760cb19373cc5eccd6bf2b154dc
 

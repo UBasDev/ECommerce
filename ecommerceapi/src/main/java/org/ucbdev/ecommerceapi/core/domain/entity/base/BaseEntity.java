@@ -13,12 +13,12 @@ import java.time.LocalDateTime;
 public class BaseEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    protected Long id;
     @CreationTimestamp
-    private LocalDateTime createdDate;
+    protected LocalDateTime createdDate;
     @UpdateTimestamp
-    private LocalDateTime updatedDate;
-    private LocalDateTime deletedDate;
+    protected LocalDateTime updatedDate;
+    protected LocalDateTime deletedDate;
 
     public BaseEntity() {
     }
